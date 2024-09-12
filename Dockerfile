@@ -3,7 +3,7 @@ FROM python:3.9
 
 # Set the working directory
 WORKDIR /app
-
+RUN apt-get update && apt-get install -y openjdk-11-jre
 # Copy the requirements file
 COPY requirements.txt .
 
