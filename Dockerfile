@@ -1,5 +1,5 @@
 # Base image
-FROM python:3.9-slim
+FROM python:3.9
 
 # Install necessary dependencies, including Java
 RUN apt-get update && \
