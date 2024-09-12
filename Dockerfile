@@ -1,9 +1,19 @@
 # Base image
-FROM python:3.9
+FROM python:3.9-slim
+
+# Install necessary dependencies, including Java
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    openjdk-11-jre && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
 WORKDIR /app
-RUN apt-get update && apt-get install -y openjdk-11-jre
+
+# Copy the requirements file
+COPY requirements.txt .
+
 # Copy the requirements file
 COPY requirements.txt .
 
