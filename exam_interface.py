@@ -1,6 +1,6 @@
 # Assuming you have a file called student_interface.py or similar
 import streamlit as st
-from services.exam_service import fetch_grades,fetch_questions
+from exam_service import fetch_grades,fetch_questions
 
 def student_interface(student_id):
     st.sidebar.title("Student Dashboard")
@@ -24,9 +24,9 @@ def display_grades(student_id):
 
 from datetime import datetime
 from nlp_evaluation import evaluate_answer
-from services.exam_service import fetch_questions, save_exam_results, check_if_taken_today, update_exam_results
+from exam_service import fetch_questions, save_exam_results, check_if_taken_today, update_exam_results
 
-from services.exam_service import fetch_questions, save_exam_results, update_exam_results, check_if_taken_today
+from exam_service import fetch_questions, save_exam_results, update_exam_results, check_if_taken_today
 
 
 

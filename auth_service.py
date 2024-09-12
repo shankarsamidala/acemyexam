@@ -1,4 +1,4 @@
-from config.db_config import get_db_connection
+from db_config import get_db_connection
 import sqlite3
 
 def register_user(email, password,  age, role='student'):

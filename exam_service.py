@@ -1,6 +1,6 @@
 # services/exam_service.py
 import json
-from config.db_config import get_db_connection
+from db_config import get_db_connection
 
 def fetch_grades(student_id):
     """

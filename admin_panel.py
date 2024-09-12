@@ -1,5 +1,5 @@
 import streamlit as st
-from .admin_service import add_question, update_question, delete_question,get_all_questions
+from admin_service import add_question, update_question, delete_question,get_all_questions
 import pandas as pd
 def admin_panel():
     st.title("Admin Dashboard")

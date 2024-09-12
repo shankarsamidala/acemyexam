@@ -1,7 +1,7 @@
 import streamlit as st
-from services.auth_service import login_user, register_user
-from admin.admin_panel import admin_panel  # Ensure you have this module
-from student.exam_interface import student_interface  # Ensure you have this module
+from auth_service import login_user, register_user
+from admin_panel import admin_panel  # Ensure you have this module
+from exam_interface import student_interface  # Ensure you have this module
 
 def main():
     st.title("Welcome ")

@@ -1,5 +1,5 @@
 import sqlite3
-from config.db_config import get_db_connection
+from db_config import get_db_connection
 
 def add_question(text, options, correct_answer, difficulty_level, type, marks):
     conn = get_db_connection()
