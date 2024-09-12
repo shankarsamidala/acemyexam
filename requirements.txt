@@ -14,7 +14,7 @@ cloudpathlib
 confection
 cryptography
 cymem
-en-core-web-sm
+
 filelock
 firebase-admin
 fsspec
